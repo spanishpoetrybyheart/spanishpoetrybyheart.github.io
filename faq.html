@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <title>FAQ - Spanish Poetry by Heart</title>
+    <style>
+    :root {
+      /* Fondo granate refinado */
+      --bg-color: #cbbebf; 
+      --bg-gradient: radial-gradient(circle at center, #ebdcdb 0%, #c0b1b2 100%);
+      
+      --text-main: #251214;
+      --text-muted: #523b3e;
+      --text-eyebrow: #6b2d35;
+      
+      --primary-color: #6b2d35;
+      --primary-hover: #4e1e24;
+      
+      --card-bg: #ffffff;
+      --border-color: #bfa8ab;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: var(--bg-color);
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+    }
+
+    header {
+      max-width: 650px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-eyebrow);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    p.subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* Tabla / Menú de contenidos de las FAQ */
+    .faq-toc {
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      width: 100%;
+      max-width: 750px;
+    }
+
+    .faq-toc-title {
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .faq-toc ul {
+      list-style-type: none;
+    }
+
+    .faq-toc li {
+      margin-bottom: 0.6rem;
+    }
+
+    .faq-toc li:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-toc a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .faq-toc a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+
+    .faq-container {
+      width: 100%;
+      max-width: 750px;
+      margin-bottom: 3rem;
+    }
+
+    /* Tarjeta individual para cada pregunta */
+    .faq-item {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(37, 18, 20, 0.08);
+      text-align: left;
+      scroll-margin-top: 2rem;
+    }
+
+    .faq-question {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 0.85rem;
+      line-height: 1.35;
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .faq-answer p {
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Botón para volver a inicio */
+    .navigation-wrapper {
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.75rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(107, 45, 53, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      box-shadow: 0 6px 16px rgba(78, 30, 36, 0.35);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">Frequently Asked Questions</div>
+      <h1>Spanish Poetry by Heart</h1>
+      <p class="subtitle">Everything you need to know about the project
+        and learning method</p>
+    </header>
+    <!-- Menú de índice rápido -->
+    <nav class="faq-toc">
+      <div class="faq-toc-title">Quick Navigation</div>
+      <ul>
+        <li><a href="#faq-selection">1. How were the poems and authors
+            selected?</a></li>
+        <li><a href="#faq-15th-century">2. Is 15th-century poetry worth
+            memorizing?</a></li>
+        <li><a href="#faq-translations">3. Why are the English
+            translations literal rather than poetic?</a></li>
+        <li><a href="#faq-reciting-native">4. What happens when you
+            recite these fragments to native speakers?</a></li>
+        <li><a href="#faq-support">5. How can I support your work and
+            help other readers?</a></li>
+        <li><a href="#faq-memorized-all">6. What should I do after I've
+            memorized all the poems?</a></li>
+        <li><a href="#faq-share-audio">7. How can I share my recitations
+            or connect with other readers?</a></li>
+        <li><a href="#faq-series">8. Are there going to be other books
+            in this series?</a></li>
+        <li><a href="#faq-languages">9. Have you personally memorized
+            poetry in other languages?</a></li>
+      </ul>
+    </nav>
+    <main class="faq-container">
+      <!-- PREGUNTA 1 -->
+      <div class="faq-item" id="faq-selection">
+        <h2 class="faq-question">How were the poems and authors selected
+          for this collection?</h2>
+        <div class="faq-answer">
+          <p> They weren't chosen in an ivory tower! The fragments in
+            this book are the exact lines that I—and millions of native
+            Spanish speakers—grew up hearing, memorizing, and keeping in
+            our hearts. </p>
+          <p> They were selected for their sheer popularity and cultural
+            resonance. By internalizing these well-loved verses, you
+            aren't just practicing Spanish—you're acquiring the cultural
+            memory that allows you to integrate effortlessly into any
+            Spanish-speaking environment. </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 2 -->
+      <div class="faq-item" id="faq-15th-century">
+        <h2 class="faq-question">Is a poem written in the 15th century
+          really worth the effort to memorize?</h2>
+        <div class="faq-answer">
+          <p> Absolutely. At first glance, 15th-century Spanish might
+            seem like a relic, but memorizing a classic <em>romance</em>
+            or early copla connects you directly to the bedrock of the
+            language. </p>
+          <p> These early poems were born from oral traditions—crafted
+            specifically to be sung, recited, and remembered—making them
+            surprisingly sticky and rhythmically rewarding to learn by
+            heart. </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 3 -->
+      <div class="faq-item" id="faq-translations">
+        <h2 class="faq-question">Why are the English translations
+          literal rather than poetic?</h2>
+        <div class="faq-answer">
+          <p> That was a deliberate pedagogical choice. The translations
+            aren't meant to replace the poetry; their sole purpose is to
+            serve as a clear bridge to the original Spanish without
+            forcing you to constantly consult a dictionary. </p>
+          <p> By keeping the English precise and direct, the true
+            artistic beauty remains where it belongs: in the Spanish
+            original. </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 4 -->
+      <div class="faq-item" id="faq-reciting-native">
+        <h2 class="faq-question">What happens when you recite these
+          fragments to native Spanish speakers?</h2>
+        <div class="faq-answer">
+          <p> Magic, plain and simple! Whenever I recite these lines to
+            Spanish friends or acquaintances, their faces light up with
+            immediate recognition. </p>
+          <p> Native speakers often experience an instant wave of
+            nostalgia—and more often than not, they start reciting the
+            next line right along with you! Try it yourself and tell us
+            their reaction! </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 5 -->
+      <div class="faq-item" id="faq-support">
+        <h2 class="faq-question">How can I support your work and help
+          other readers find the book?</h2>
+        <div class="faq-answer">
+          <p> The absolute best way you can support this project is by
+            leaving an honest review on Amazon! </p>
+          <p> Online algorithms rely heavily on reviews to recommend
+            titles. Sharing a few words about your experience boosts the
+            book's visibility and helps other language learners and
+            poetry lovers discover it. </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 6 -->
+      <div class="faq-item" id="faq-memorized-all">
+        <h2 class="faq-question">What should I do after I've memorized
+          all the poems in the book?</h2>
+        <div class="faq-answer">
+          <p> First of all—congratulations! Internalizing an entire
+            collection of verse in a foreign language is a remarkable
+            achievement. </p>
+          <p> I would love to hear about your experience in depth, so
+            please reach out directly using our Contact page to tell me
+            your story. </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 7 -->
+      <div class="faq-item" id="faq-share-audio">
+        <h2 class="faq-question">How can I share my recitations or
+          connect with other readers?</h2>
+        <div class="faq-answer">
+          <p> I would love to hear your recitations! If you record
+            yourself reading a poem from the book, upload your audio
+            file to a cloud storage service (such as Google Drive,
+            Dropbox, or OneDrive) with public sharing enabled. </p>
+          <p> Then, send us the link via our Contact page. We will build
+            a dedicated community showcase so everyone can listen,
+            learn, and celebrate each other's progress together! </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 8 -->
+      <div class="faq-item" id="faq-series">
+        <h2 class="faq-question">Are there going to be other books in
+          this series?</h2>
+        <div class="faq-answer">
+          <p> It isn't a series yet, but I would love to see
+            community-created editions like <em>French</em>, <em>German</em>,
+            <em>Russian</em>, <em>Turkish</em>, or <em>Chinese Poetry
+              by Heart</em>. </p>
+          <p> If you are passionate about another language, go ahead and
+            create one! </p>
+        </div>
+      </div>
+      <!-- PREGUNTA 9 -->
+      <div class="faq-item" id="faq-languages">
+        <h2 class="faq-question">Have you personally memorized poetry in
+          other languages?</h2>
+        <div class="faq-answer">
+          <p> Of course! I don't just recommend this approach—I practice
+            it myself. </p>
+          <p> I have memorized timeless pieces such as William
+            Shakespeare's <em>Sonnet 18</em> ("Shall I compare thee to
+            a summer's day?"), Percy Bysshe Shelley's <em>Ozymandias</em>
+            ("I met a traveller from an antique land..."), and Langston
+            Hughes's <em>I, Too</em>. I also know passages from Walt
+            Whitman's <em>O Captain! My Captain!</em> and Rudyard
+            Kipling's <em>If—</em>, as well as rhythmic prose like John
+            Donne's <em>Devotions</em> ("No man is an island..."). </p>
+        </div>
+      </div>
+    </main>
+    <div class="navigation-wrapper"> <a href="index.html"
+        class="btn-back">← Back to Home</a> </div>
+    <footer> © 2026 Jesús Oliván • Spanish Poetry by Heart. All rights
+      reserved. </footer>
+  </body>
+</html>

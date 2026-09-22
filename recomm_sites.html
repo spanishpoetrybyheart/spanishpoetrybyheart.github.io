@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <title>Websites &amp; Archives - Spanish Poetry by Heart</title>
+    <style>
+    :root {
+      --bg-color: #cbbebf; 
+      --bg-gradient: radial-gradient(circle at center, #ebdcdb 0%, #c0b1b2 100%);
+      
+      --text-main: #251214;
+      --text-muted: #523b3e;
+      --text-eyebrow: #6b2d35;
+      
+      --primary-color: #6b2d35;
+      --primary-hover: #4e1e24;
+      
+      --card-bg: #ffffff;
+      --border-color: #bfa8ab;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: var(--bg-color);
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+    }
+
+    header {
+      max-width: 650px;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-eyebrow);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    p.subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .hub-container {
+      width: 100%;
+      max-width: 580px;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* Tarjetas de enlaces externos */
+    .hub-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      text-align: left;
+      text-decoration: none;
+      color: var(--text-main);
+      box-shadow: 0 4px 12px rgba(37, 18, 20, 0.08);
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hub-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(37, 18, 20, 0.15);
+      border-color: var(--primary-color);
+    }
+
+    .hub-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .hub-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+
+    .hub-link-text {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .navigation-wrapper {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.75rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(107, 45, 53, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      box-shadow: 0 6px 16px rgba(78, 30, 36, 0.35);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      width: 100%;
+      max-width: 580px;
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">Curated Resources</div>
+      <h1>Websites &amp; Archives</h1>
+      <p class="subtitle">A curated selection of digital repositories,
+        audiovisual archives, and literary portals</p>
+    </header>
+    <main class="hub-container">
+      <!-- 1. RTVE Play Archivo --> <a
+        href="https://www.rtve.es/play/archivo/" target="_blank"
+        rel="noopener noreferrer" class="hub-card">
+        <div>
+          <h2 class="hub-title">RTVE Play Archivo</h2>
+          <p class="hub-desc">The historical audiovisual archive of
+            Spain's public broadcaster. It houses legendary literary
+            interviews, author profiles, poetry recitals, and cultural
+            television programs from the past several decades.</p>
+        </div>
+        <span class="hub-link-text">Visit RTVE Archivo ↗</span> </a>
+      <!-- 2. Fundación Juan March - Archivo -->
+      <!-- 3. Fundación Juan March - Canal March --> <a
+        href="https://canal.march.es/es" target="_blank" rel="noopener
+        noreferrer" class="hub-card">
+        <div>
+          <h2 class="hub-title">Canal March (Fundación Juan March)</h2>
+          <p class="hub-desc">An exceptional multimedia platform
+            containing full-length video and audio recordings of
+            scholarly conferences, poetry series, literary lectures, and
+            musical events delivered by leading figures in the
+            humanities.</p>
+        </div>
+        <span class="hub-link-text">Watch &amp; Listen on Canal March ↗</span>
+      </a>
+      <!-- 4. Biblioteca Virtual Miguel de Cervantes --> <a
+        href="https://www.cervantesvirtual.com/" target="_blank"
+        rel="noopener noreferrer" class="hub-card">
+        <div>
+          <h2 class="hub-title">Biblioteca Virtual Miguel de Cervantes</h2>
+          <p class="hub-desc">The leading digital library of Hispanic
+            literature, granting open access to digitized original
+            editions, complete works, author portals, critical studies,
+            and voice recordings of classical and modern Hispanic poets.</p>
+        </div>
+        <span class="hub-link-text">Browse Cervantes Virtual ↗</span> </a>
+      <!-- 5. Poesi.as --> <a href="https://www.poesi.as/"
+        target="_blank" rel="noopener noreferrer" class="hub-card">
+        <div>
+          <h2 class="hub-title">Poesi.as</h2>
+          <p class="hub-desc">A classic, reference anthology of Spanish
+            and Latin American poetry. Features an extensive collection
+            of poems arranged chronologically by author and century,
+            from the Middle Ages to the 20th century.</p>
+        </div>
+        <span class="hub-link-text">Visit Poesi.as ↗</span> </a> </main>
+    <div class="navigation-wrapper"> <a href="recommendations.html"
+        class="btn-back">← Back to Recommendations</a> </div>
+    <footer> © 2026 Jesús Oliván • Spanish Poetry by Heart. All rights
+      reserved. </footer>
+  </body>
+</html>

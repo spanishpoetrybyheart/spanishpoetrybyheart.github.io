@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Spanish Poetry by Heart</title>
+    <style>
+    :root {
+      /* Fondo granate refinado */
+      --bg-color: #cbbebf; 
+      --bg-gradient: radial-gradient(circle at center, #ebdcdb 0%, #c0b1b2 100%);
+      
+      --text-main: #251214;
+      --text-muted: #523b3e;
+      --text-eyebrow: #6b2d35;
+      
+      --primary-color: #6b2d35;
+      --primary-hover: #4e1e24;
+      
+      --card-bg: #ffffff;
+      --border-color: #bfa8ab;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: var(--bg-color);
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+    }
+
+    header {
+      max-width: 650px;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-eyebrow);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    p.subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+    /* Tarjeta principal con el mensaje cálido */
+    .contact-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2.5rem 2.5rem;
+      box-shadow: 0 4px 12px rgba(37, 18, 20, 0.08);
+      text-align: left;
+    }
+
+    .message-body {
+      font-size: 1.05rem;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .message-body p {
+      margin-bottom: 1.25rem;
+    }
+
+    .email-box {
+      margin: 2rem 0 1rem 0;
+      padding: 1.25rem;
+      background-color: #faf8f8;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .email-label {
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .email-address {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      user-select: all; /* Facilita la selección/copiado del texto */
+      word-break: break-all;
+    }
+
+    /* Botón para regresar a la página principal */
+    .navigation-wrapper {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.75rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(107, 45, 53, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      box-shadow: 0 6px 16px rgba(78, 30, 36, 0.35);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="eyebrow">Get in Touch</div>
+      <h1>Contact &amp; Conversation</h1>
+      <p class="subtitle">We would love to hear from readers, learners, and poetry enthusiasts</p>
+    </header>
+
+    <main class="contact-container">
+
+      <div class="contact-card">
+        <div class="message-body">
+          <p>
+            Whether you have a question about a particular stanza, a suggestion for future editions, 
+            or simply want to share your journey memorizing Spanish verse, your thoughts are always welcome.
+          </p>
+          <p>
+            This project is built on a shared passion for language and human connection. Every note, comment, 
+            or feedback is read with genuine appreciation and care.
+          </p>
+          <p>
+            Please feel free to write directly:
+          </p>
+        </div>
+
+        <div class="email-box">
+          <div class="email-label">Direct Email Address</div>
+          <span class="email-address">spanishpoetrybyheart@gmail.com</span>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="navigation-wrapper">
+      <a href="index.html" class="btn-back">← Back to Home</a>
+    </div>
+
+    <footer>
+      © 2026 Jesús Oliván • Spanish Poetry by Heart. All rights reserved.
+    </footer>
+
+  </body>
+</html>
