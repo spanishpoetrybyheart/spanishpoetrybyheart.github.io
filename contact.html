@@ -99,7 +99,7 @@
     }
 
     .email-box {
-      margin: 2rem 0 1rem 0;
+      margin: 2rem 0 1.5rem 0;
       padding: 1.25rem;
       background-color: #faf8f8;
       border: 1px solid var(--border-color);
@@ -122,6 +122,28 @@
       color: var(--primary-color);
       user-select: all; /* Facilita la selección/copiado del texto */
       word-break: break-all;
+    }
+
+    .substack-box {
+      margin: 1.5rem 0 0.5rem 0;
+      padding: 1.25rem;
+      background-color: #faf8f8;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .substack-link {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .substack-link:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
     }
 
     /* Botón para regresar a la página principal */
@@ -192,7 +214,14 @@
 
         <div class="email-box">
           <div class="email-label">Direct Email Address</div>
-          <span class="email-address">spanishpoetrybyheart@gmail.com</span>
+          <span class="email-address">jesusolivan.mail@gmail.com</span>
+        </div>
+
+        <div class="substack-box">
+          <div class="email-label">Essays &amp; Writing on Substack</div>
+          <a href="https://jesusolivanwriter.substack.com" target="_blank" rel="noopener noreferrer" class="substack-link">
+            jesusolivanwriter.substack.com ↗
+          </a>
         </div>
       </div>
 
